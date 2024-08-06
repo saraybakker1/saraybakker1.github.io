@@ -1,0 +1,131 @@
+---
+---
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.page-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+.navbar-name {
+    font-family: 'Montserrat', sans-serif;
+    color: #000000;
+    font-weight: 700;
+    font-size: x-large;
+}
+
+.accent-color {
+    // color: #D107A9;
+    color: #006bcf;
+}
+
+.nav-link.active {
+    font-weight: 600;
+}
+
+a {
+    color: #006bcf;
+}
+
+.brutalist-card {
+    --shadow-color-black: #cacaca;
+    --shadow-color-red: #FF0000;
+    --shadow-color-blue: #00eeff;
+    --shadow-color-green: #00FF00;
+
+    color: #000000; /* High contrast text color */
+    border: 2px solid #000000; /* Solid, thick borders */
+    --shadow-color: var(--shadow-color-black); /* Set default shadow color to black */
+    box-shadow: var(--initial-box-shadow, 4px 4px 0px var(--shadow-color)); /* Uses variable for shadow color */
+    border-radius: 8px; /* Rounded edges */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
+    position: relative; /* Needed for moving the card */
+  
+    // No animation on hover by default
+    &:hover {
+      box-shadow: var(--hover-box-shadow, 4px 4px 0px var(--shadow-color, --shadow-color-black)); /* Keeps the shadow as is */
+      transform: translateY(var(--hover-translate-y, 0px)); /* No movement */
+    }
+  
+    // Modifier for push effect on hover
+    &.push-on-hover {
+      --hover-translate-y: 4px; /* Moves the card down to simulate pressing */
+      --hover-box-shadow: 0px 0px 0px var(--shadow-color, --shadow-color-black); /* Adjusts shadow to simulate being pressed */
+    }
+  
+    // Modifier for shadow appearance on hover
+    &.shadow-on-hover {
+      --initial-box-shadow: 0px 0px 0px transparent; /* No shadow initially */
+      --hover-box-shadow: 4px 4px 0px var(--shadow-color, --shadow-color-black); /* Shadow appears on hover */
+      --hover-translate-y: 0px; /* Card does not move down */
+    }
+  }
+  
+  // Color modifiers
+  .brutalist-card.shadow-color-red { --shadow-color: var(--shadow-color-red); }
+  .brutalist-card.shadow-color-blue { --shadow-color: var(--shadow-color-blue); }
+  .brutalist-card.shadow-color-green { --shadow-color: var(--shadow-color-green); }
+
+ul.timeline {
+    list-style-type: none;
+    position: relative;
+}
+
+ul.timeline:before {
+    content: ' ';
+    background: #8f8f8f;
+    display: inline-block;
+    position: absolute;
+    left: 29px;
+    width: 2px;
+    height: 100%;
+    z-index: 400;
+}
+
+ul.timeline > li {
+    margin: 20px 0;
+    padding-left: 20px;
+}
+
+ul.timeline > li:before {
+    content: ' ';
+    background: white;
+    display: inline-block;
+    position: absolute;
+    border-radius: 50%;
+    border: 3px solid #000000;
+    left: 20px;
+    width: 20px;
+    height: 20px;
+    z-index: 400;
+}
+
+.paper-body {
+    h2 {
+        margin-top: 45px;
+        margin-bottom: 10px;
+    }
+    h3 {
+        margin-top: 25px;
+        margin-bottom: 10px;
+    }
+}
+
+h2 {
+    margin-top: 30px;
+}
+
+::-moz-selection { /* Code for Firefox */
+    color: white;
+    background: #000000;
+}
+
+::selection {
+    color: white;
+    background: #000000;
+}
+
+  
