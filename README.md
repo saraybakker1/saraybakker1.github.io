@@ -38,7 +38,7 @@ GitHub pages builds the website upon pushing to the `main` branch. However, if y
 
 3. Run the following command in the root directory of the repository:
 
-    ```bash
+    ```shell
     docker-compose up
     ```
 
