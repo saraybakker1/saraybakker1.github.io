@@ -6,11 +6,20 @@
   
     <ul class="nav col-lg-4 justify-content-center">
       {% for social in site.data.socials %}
-      {% if social.icon == null %}
-      <li class="nav-item align-self-center"><a href="{{ social.url }}" title="{{ social.name }}" target="_blank" class="nav-link px-2 text-dark">{{ social.name }}</a></li>
-      {% else %}
-      <li class="nav-item"><a href="{{ social.url }}" title="{{ social.name }}" target="_blank" class="nav-link px-2 text-dark"><i class="{{ social.icon }} fs-4 "></i></a></li>
-      {% endif %}
+
+      <li class="nav-item align-self-center">
+        <a href="{{ social.url }}" title="{{ social.name }}" target="_blank" class="nav-link px-2 text-dark">
+          {% if social.icon %}
+            {% if social.icon contains '.svg' %}
+              <img src="{{ social.icon }}" class="fs-4" height="24" alt="{{ social.name }}">
+            {% else %}
+              <i class="{{ social.icon }} fs-4"></i>
+            {% endif %}
+          {% else %}
+            {{ social.name }}
+          {% endif %}
+        </a>
+      </li>
       {% endfor %}
     </ul>
 

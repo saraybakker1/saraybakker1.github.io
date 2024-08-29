@@ -16,3 +16,6 @@
 - name: Google Scholar
   url: https://scholar.google.com/citations?user=mQvQ-DYAAAAJ&hl=en
   icon: bi bi-mortarboard
+# - name: Orcid
+#   url: https://orcid.org/0009-0000-2903-0834
+#   icon: /assets/icons/orcid.svg
