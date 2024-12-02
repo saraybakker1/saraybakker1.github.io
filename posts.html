@@ -1,16 +1,16 @@
 ---
-title: Posts & Miscellanea
+title: Posts
 permalink: /posts/
 ---
 
 <p>
-    This is a collection of posts, thoughts, and other miscellanea that I have written over the years. I hope you find them interesting.
+    Coming soon....
 </p>
 
 <div class="posts">
     {% assign sorted_posts = site.posts | sort: 'date' | reverse %}
     {% if sorted_posts.size == 0 %}
-        <p class=" fs-5">Nothing yet! Expect some in the future ...</p>
+        <p class=" fs-5"></p>
     {% else %}
         {% for post in sorted_posts %}
         {% if forloop.first %}
