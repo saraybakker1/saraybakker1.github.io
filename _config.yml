@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Saray
+title: Saray's website
 description: >- # this means to ignore newlines until "baseurl:"
   Saray Bakker, personal website.
 
@@ -32,7 +32,7 @@ author: Saray Bakker
 url: "http://saraybakker.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
-google_analytics: G-ZQN5G9F3CC
+# google_analytics: G-ZQN5G9F3CC
 
 permalink: /:year/:month/:day/:title/
 
