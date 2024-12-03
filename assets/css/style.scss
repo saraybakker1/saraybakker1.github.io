@@ -37,9 +37,9 @@ a {
     --shadow-color-green: #00FF00;
 
     color: #000000; /* High contrast text color */
-    border: 2px solid #000000; /* Solid, thick borders */
-    --shadow-color: var(--shadow-color-black); /* Set default shadow color to black */
-    box-shadow: var(--initial-box-shadow, 4px 4px 0px var(--shadow-color)); /* Uses variable for shadow color */
+    border: 2px solid #6495ED; /* Solid, thick borders */
+    // --shadow-color: var(--shadow-color-black); /* Set default shadow color to black */
+    // box-shadow: var(--initial-box-shadow, 4px 4px 0px var(--shadow-color)); /* Uses variable for shadow color */
     border-radius: 8px; /* Rounded edges */
     transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
     position: relative; /* Needed for moving the card */

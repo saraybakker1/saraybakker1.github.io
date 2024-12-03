@@ -1,103 +1,96 @@
 [
     {
-        "title": "Physically Grounded Optimal Realizations of Symbolic Plans",
+        "title": "A Bayesian optimization framework for the automatic tuning of MPC-based shared controllers",
         "authors": [
-            "Andreu Matoses Gimenez",
-            "Nils Wilde",
-            "Chris Pek",
+            "Anne van der Horst",
+            "Bas Meere",
+            "Dinesh Krishnamoorthy",
+            "Saray Bakker",
+            "Bram van de Vrande",
+            "Henry Stoutjesdijk",
+            "Marco Alonso",
+            "Elena Torta",
+        ],
+        "date": "2024-05-01",
+        "type": "conference",
+        "venue": "IEEE International Conference on Robotics and Automation (ICRA)",
+        "links": [
+            {
+                "pdf": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10610655"
+            }
+        ],
+        "image": "/assets/images/papers/mscphilips/MscPhilips.png",
+        "key_words": [
+            "mscphilips"
+        ],
+        "abstract": "This paper presents a Bayesian optimization framework for the automatic tuning of shared controllers which are defined as a Model Predictive Control (MPC) problem. The proposed framework includes the design of performance metrics as well as the representation of user inputs for simulation-based optimization. The framework is applied to the optimization of a shared controller for an Image Guided Therapy robot. VR-based user experiments confirm the increase in performance of the automatically tuned MPC shared controller with respect to a hand-tuned baseline version as well as its generalization ability."
+      },
+      {
+        "title": " Multi-Robot Local Motion Planning Using Dynamic Optimization Fabrics",
+        "authors": [
+            "Saray Bakker", 
+            "Luzia Knoedler", 
+            "Max Spahn", 
+            "Wendelin Böhmer", 
             "Javier Alonso-Mora"
+        ],
+        "date": "2023-12-01",
+        "type": "conference",
+        "venue": "IEEE International Symposium on Multi-Robot & Multi-Agent Systems (MRS)",
+        "links": [
+            {
+                "pdf": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10416784",
+                "code": "https://github.com/tud-amr/multi-robot-fabrics",
+                "video": "https://www.youtube.com/watch?v=jaJBrSecDcM"
+            }
+        ],
+        "image": "/assets/images/papers/multirobotfabrics/video_rf_cv_2robots.gif",
+        "abstract": "In this paper, we address the problem of real-time motion planning for multiple robotic manipulators that operate in close proximity. We build upon the concept of dynamic fabrics and extend them to multi-robot systems, referred to as Multi-Robot Dynamic Fabrics (MRDF). This geometric method enables a very high planning frequency for high-dimensional systems at the expense of being reactive and prone to deadlocks. To detect and resolve deadlocks, we propose Rollout Fabrics where MRDF are forward simulated in a decentralized manner. We validate the methods in simulated close-proximity pick-and-place scenarios with multiple manipulators, showing high-success rates and real-time performance."
+      },
+      {
+        "title": "Safe and stable motion primitives via imitation learning and geometric fabrics",
+        "authors": [
+            "Saray Bakker", 
+            "Rodrigo Pérez-Dattari", 
+            "Cosimo Della Santina",
+            "Wendelin Böhmer", 
+            "Javier Alonso-Mora"
+        ],
+        "date": "2024-11-01",
+        "type": "workshop",
+        "venue": "CORL, Workshop on Mastering Robot Manipulation in a World of Abundant Data",
+        "links": [
+            {
+                "pdf": "https://openreview.net/pdf?id=xWU3Tb8JCE",
+            }
+        ],
+        "image": "/assets/images/papers/tamedpuma/cpm.mp4",
+        "key_words": [
+        ],
+        "abstract": "Using the language of dynamical systems, Imitation learning (IL) provides an intuitive and effective way of teaching stable task-space motions to robots with goal convergence. Yet, these techniques are affected by serious limitations when it comes to ensuring safety and fulfillment of physical constraints. With this work, we propose to solve this challenge via TamedPUMA, an IL algorithm augmented with a recent development in motion planning called geometric fabrics. We explore two variations of this approach, which we name the forcing policy method and the compatible potential method. The result is a stable imitation learning strategy within which we can seamlessly blend geometrical constraints like collision avoidance and joint limits. Beyond providing a theoretical analysis, we demonstrate TamedPUMA with simulated and real-world tasks, including a 7-DoF manipulator."
+      },
+      {
+        "title": "Reactive grasp and motion planning for adaptive mobile manipulation among obstacles",
+        "authors": [
+            "Tomas Merva",
+            "Saray Bakker",
+            "Max Spahn",
+            "Ivan Virgala",
+            "Javier Alonso-Mora",
         ],
         "date": "2024-07-15",
         "type": "workshop",
-        "venue": "Robotics: Science and Systems (RSS), Workshop on Frontiers of Optimization for Robotics",
+        "venue": "Robotics: Science and Systems, Workshop on Frontiers of Optimization for Robotics",
         "links": [
             {
-                "pdf": "/assets/files/publications/24_matoses_rss.pdf"
+                "pdf": "https://autonomousrobots.nl/assets/files/publications/24_merva_rss.pdf"
             }
         ],
-        "image": "/assets/images/papers/realization_of_plans/dingo_isaac.png",
-        "key_words": [
-            "interact"
+        "note": null,
+        "belongs_to_projects": ["interact", "saraypapers"],
+        "topics":[
+            "motion planning", "grasp planning"    
         ],
-        "abstract": "Robot autonomy often involves planning high-level discrete decisions and continuous motion planning to realize each decision. Task and Motion Planning (TAMP) algorithms solve these hybrid problems jointly while considering constraints between the discrete symbolic actions, i.e., the task plan, and their continuous geometric realization. Previous TAMP algorithms have mostly focused on computational performance, completeness, or optimality. However, due to the required simplifications and abstractions, the resulting plans often do not account for robot dynamics, nor complex contacts. They also often ignore the effect of the low-level controllers on the optimality and/or feasibility of the plan's realizations. This work investigates the use of a parallelized physics simulator to compute realizations of the plan with a motion controller, realistic dynamics, and considering contacts with the environment. Using cross-entropy optimization, we sample the parameters used by the controllers, or actions, to obtain low-cost solutions. The resulting realized plan is straightforward to implement in the real system, as the robot uses the same controllers. We test our approach for a pick and place task, where our method is capable of finding low-cost feasible solutions in 1-2 min."
-      },
-      {
-        "title": " Enhancing Precision Agriculture through Human-In-The-Loop Planning and Control",
-        "authors": [
-            "Shankar Deka",
-            "Sujet Phodapol",
-            "Andreu Matoses Gimenez",
-            "Victor Nan Fernandez-Ayala",
-            "Rufus C. Y. Wong",
-            "Pian Yu",
-            "Xiao Tan",
-            "Dimos V. Dimarogonas"
-        ],
-        "date": "2024-08-28",
-        "type": "conference",
-        "venue": "IEEE 20th International Conference on Automation Science and Engineering (CASE)",
-        "links": [
-            {
-                "pdf": "/",
-                "More": "https://andreumatoses.github.io/research/canopies-kth"
-            }
-        ],
-        "image": "/assets/images/papers/canopies/canopies_rome_test_43_short_good.gif",
-        "key_words": [
-            "Agricultural Automation",
-            "Formal Methods in Robotics and Automation",
-            "Human Factors and Human-in-the-Loop"
-        ],
-        "abstract": "In this paper, we introduce a ROS based framework designed for the planning and control of robotic systems within the context of precision agriculture, with an emphasis on human-in-the-loop capabilities. Utilizing Linear Temporal Logic to articulate complex task specifications, our algorithm creates high-level robotic plans that are not only correct by design but also adaptable in real time by human operators. This dual-focus approach ensures that while humans have the flexibility to modify the high-level plan on-the-fly or even take over low-level control of the robots, the system inherently safeguards against any human actions that could potentially breach the predefined task specifications. We demonstrate our algorithm within the dynamic and challenging environment of a real vineyard, where the collaboration between human workers and robots is critical for tasks such as harvesting and pruning, and show the practical applicability and robustness of our software. This work marks a pioneering application of formal methods to complex, real-world agricultural environments."
-      },
-      {
-        "title": "Design of a HALE UAV for Atmospheric Imaging",
-        "authors": [
-            "Victor Nan Fernandez-Ayala",
-            "László Vimláti",
-            "Andreu Matoses Gimenez",
-            "Helena Delmotte",
-            "Mykola Ivchenko",
-            "Raffaello Mariani"
-        ],
-        "date": "2022-09-01",
-        "type": "conference",
-        "venue": "International Council of the Aeronautical Sciences (ICAS)",
-        "links": [
-            {
-                "pdf": "https://www.icas.org/ICAS_ARCHIVE/ICAS2022/data/papers/ICAS2022_0447_paper.pdf",
-                "website": "https://www.kthaero.com/alpha",
-                "images": "https://andreumatoses.github.io/research/alpha-uav#media"
-            }
-        ],
-        "image": "/assets/images/papers/alpha_uav/manufacturing_full_scale.png",
-        "key_words": [
-            "interact"
-        ],
-        "abstract": "Optical phenomena in the upper atmosphere, such as northern lights, airglow, noctilucent clouds and thunderstorm-related transient luminous phenomena reveal the complex processes coupling different layers of the atmosphere and the near earth space. Bad weather and lighting conditions, as well as geographical constraints, limit the possibilities of ground based imaging. Therefore, an autonomous high altitude long endurance (HALE) fixed-wing unmanned aerial vehicle (UAV ) is proposed for atmospheric imaging, as a joint student-driven research project between the Aeronautics and Vehicle Engineering- and the Space and Plasma Physics departments at KTH Royal Institute of Technology. The Autonomous Light Platform for High Altitude atmospheric imaging (ALPHA) is specifically designed for operations in the environmentally harsh conditions found in Arctic night time."
-      },
-      {
-        "title": "Scalable Reinforcement Learning for Formation Control with Collision Avoidance",
-        "authors": [
-            "Andreu Matoses Gimenez",
-            "Ingvar M. Ziemann",
-            "Alexandre Proutiere"
-        ],
-        "date": "2023-2-07",
-        "type": "thesis",
-        "venue": "Master Thesis, KTH Royal Institute of Technology",
-        "links": [
-            {
-                "pdf": "https://kth.diva-portal.org/smash/get/diva2:1750943/FULLTEXT01.pdf",
-                "website": "https://andreumatoses.github.io/research/msc-thesis-marl",
-                "code": "https://github.com/AndreuMatoses/scalable-collision-avoidance-RL"
-            }
-        ],
-        "image": "/assets/images/papers/msc_thesis/n10_good.gif",
-        "key_words": [
-            "Control theory", "Multi-agent systems", "Distributed systems", "Formation control",
-            "Collision avoidance", "Reinforcement learning"
-        ],
-        "abstract": "In the last decades, significant theoretical advances have been made on the field of distributed mulit-agent control theory. One of the most common systems that can be modelled as multi-agent systems are the so called formation control problems, in which a network of mobile agents is controlled to move towards a desired final formation. These problems additionally pose practical challenges, namely limited access to information about the global state of the system, which justify the use distributed and localized approaches for solving the control problem. The problem is further complicated if partial or no information is known about the dynamic model of the system. A widely used approach for model free control is reinforcement learning (RL). A fundamental challenge of this approach in this setting is that the state-action space size scales exponentially with the number of agents, rendering the problem intractable for a large networks. This thesis presents a scalable and localized reinforcement learning approach to a traditional multi-agent formation control problem, with collision avoidance. A scalable reinforcement learning advantage actor critic algorithm is presented, based on previous work in the literature. Sub-optimal bounds are calculated for the accumulated reward and policy gradient localized approximations. The algorithm is tested on a two dimensional setting, with a network of mobile agents following simple integrator dynamics and stochastic localized policies. Neural networks are used to approximate the continuous value functions and policies. The formation control with collisions avoidance formulation and the algorithm presented show good scalability properties, with a polynomial increase in the number of function approximations parameters with number of agents. The reduced number of parameters decreases learning time for bigger networks, although the efficiency of computation is decreased compared to state of the art machine learning implementations. The policies obtained achieve probably safe trajectories although the lack of dynamic model makes it impossible to guarantee safety."
-      }
+        "abstract": "Mobile manipulators are susceptible to situations in which the precomputed grasp pose is not reachable as the result of conflicts between collision avoidance behaviour and the manipulation task. In this work, we address this issue by combining real-time grasp planning with geometric motion planning for decentralized multi-agent systems, referred to as Reactive Grasp Fabrics (RGF). We optimize the precomputed grasp pose candidate to account for obstacles and the robot's kinematics. By leveraging a reactive geometric motion planner, specifically geometric fabrics, the grasp optimization problem can be simplified, resulting in a fast, adaptive framework that can resolve deadlock situations in pick-and-place tasks. We demonstrate the robustness of this approach by controlling a mobile manipulator in both simulation and real-world experiments in dynamic environments."
+    },
 ]
