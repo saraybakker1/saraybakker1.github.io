@@ -15,11 +15,23 @@ We propose a framework that enables movability-aware planning to overcome this c
 Our framework integrates a global Semantic Visibility Graph and a local Model Predictive Path Integral (SVG-MPPI) approach to efficiently sample rollouts, taking into account the continuous range of obstacle movability. A physics engine is adopted to simulate the interaction result of the rollouts with the environment, and generate trajectories that minimize contact force.
 In qualitative and quantitative experiments, SVG-MPPI outperforms the existing paradigm that uses only binary movability for planning, achieving higher success rates with reduced cumulative contact forces.
 %This work represents a significant advancement in NAMO planning, offering a robust solution for navigating complex environments with movable obstacles.
+<br><br>
 The thesis is available at: <a href="https://repository.tudelft.nl/person/Person_728a81fc-4261-4fd7-ab1d-e5c161e1bbd7">LINK</a>, and code at: <a href="https://github.com/tud-amr/SVG-MPPI/">LINK</a>
 <br><br>
 <h4>Motion planning for mobile manipulators in multi-agent settings using MPC</h4>
 <h5>By Danning Zhao</h5>
-In progress, stay tuned!
+<b>Abstract: </b>Mobile manipulators, which integrate a robotic arm on a mobile base, are increasingly being explored and deployed in sectors such as healthcare, logistics, and aerospace. 
+While motion planning for these systems has been studied in single-agent scenarios, the use of multiple robots to enhance efficiency and accelerate task completion in multi-agent settings remains largely unexplored, particularly in real-world environments. 
+Extending motion planning to multi-mobile manipulators introduces challenges in real-time performance, collision avoidance, and coordination. 
+To address these, this thesis proposes a decentralized Model Predictive Control (MPC) framework with a double integrator as dynamic model, denoted as MPC-d, 
+tailored for multi-mobile manipulators operating in shared workspaces. It integrates optimization-based planning with robust state estimation, ensuring effective collision avoidance. 
+Furthermore, a prioritized heuristic is introduced, leveraging the prediction horizon of MPC to resolve potential livelocks. 
+The framework is validated through simulations and real-world experiments. Simulations compare MPC-d with MPC using a triple-integrator model (MPC-t) and a state-of-the-art geometric planner, called Geometric Fabrics (GF). 
+Results demonstrate that MPC-d achieves comparable task success rates and collision avoidance compared to GF in pick-and-place scenarios while requiring less computation time than MPC-t. 
+Real-world experiments confirm the framework's viability, showcasing effective collision avoidance, enhanced efficiency from the prioritized heuristic, and consistency with simulation outcomes. 
+Although MPC-d incurs higher computational costs than reactive geometric methods, it provides reliable performance and motion prediction of other agents in multi-agent settings.
+<br><br>
+Code: <a href="https://github.com/DianeZhao/dinova_mpc">LINK</a>
 <br><br>
 <h4>Switched geometric motion planning</h4>
 <h5>By Leon Kehler</h5>
