@@ -93,4 +93,72 @@
         ],
         "abstract": "Mobile manipulators are susceptible to situations in which the precomputed grasp pose is not reachable as the result of conflicts between collision avoidance behaviour and the manipulation task. In this work, we address this issue by combining real-time grasp planning with geometric motion planning for decentralized multi-agent systems, referred to as Reactive Grasp Fabrics (RGF). We optimize the precomputed grasp pose candidate to account for obstacles and the robot's kinematics. By leveraging a reactive geometric motion planner, specifically geometric fabrics, the grasp optimization problem can be simplified, resulting in a fast, adaptive framework that can resolve deadlock situations in pick-and-place tasks. We demonstrate the robustness of this approach by controlling a mobile manipulator in both simulation and real-world experiments in dynamic environments."
     },
+    {
+        "title": "Pushing Through Clutter With Movability Awareness of Blocking Obstacles",
+        "authors": [
+            "Joris J. Weeda",
+            "Saray Bakker",
+            "Gang Chen",
+            "Javier Alonso-Mora",
+        ],
+        "date": "2025-05-01",
+        "type": "conference",
+        "venue": "ICRA",
+        "links": [
+            {
+                "pdf": "https://arxiv.org/abs/2502.20106"
+            }
+        ],
+        "note": null,
+        "belongs_to_projects": ["interact", "saraypapers"],
+        "topics":[
+            "motion planning", "collision avoidance"
+        ],
+        "abstract": "Navigation Among Movable Obstacles (NAMO)
+            poses a challenge for traditional path-planning methods when
+            obstacles block the path, requiring push actions to reach
+            the goal. We propose a framework that enables movability-
+            aware planning to overcome this challenge without relying on
+            explicit obstacle placement. Our framework integrates a global
+            Semantic Visibility Graph and a local Model Predictive Path
+            Integral (SVG-MPPI) approach to efficiently sample rollouts,
+            taking into account the continuous range of obstacle movability.
+            A physics engine is adopted to simulate the interaction result
+            of the rollouts with the environment, and generate trajectories
+            that minimize contact force. In qualitative and quantitative
+            experiments, SVG-MPPI outperforms the existing paradigm
+            that uses only binary movability for planning, achieving higher
+            success rates with reduced cumulative contact forces. "
+    },
+    {
+        "title": "TamedPUMA: safe and stable imitation learning with geometric fabrics",
+        "authors": [
+            "Saray Bakker", 
+            "Rodrigo Pérez-Dattari", 
+            "Cosimo Della Santina",
+            "Wendelin Böhmer", 
+            "Javier Alonso-Mora"
+        ],
+        "date": "2025-06-01",
+        "type": "conference",
+        "venue": "L4DC",
+        "links": [
+            {
+            }
+        ],
+        "note": null,
+        "belongs_to_projects": ["interact", "saraypapers"],
+        "topics":[
+            "motion planning", "collision avoidance", "imitation learning"
+        ],
+        "abstract": "Using the language of dynamical systems, Imitation learning (IL) provides an intuitive and effective way of teaching stable task-space motions to robots with goal convergence. Yet, IL techniques
+        are affected by serious limitations when it comes to ensuring safety and fulfillment of physical
+        constraints. With this work, we solve this challenge via TamedPUMA, an IL algorithm augmented
+        with a recent development in motion planning called geometric fabrics. As both the IL policy and
+        geometric fabrics describe motions as artificial second-order dynamical systems, we propose two
+        variations where IL provides a navigation policy for geometric fabrics. The result is a stable imita-
+        tion learning strategy within which we can seamlessly blend geometrical constraints like collision
+        avoidance and joint limits. Beyond providing a theoretical analysis, we demonstrate TamedPUMA
+        with simulated and real-world tasks, including a 7-DoF manipulator."
+    },
 ]
