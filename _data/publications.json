@@ -161,4 +161,34 @@
         avoidance and joint limits. Beyond providing a theoretical analysis, we demonstrate TamedPUMA
         with simulated and real-world tasks, including a 7-DoF manipulator."
     },
+    {
+        "title": "Globally-guided geometric fabrics for reactive mobile manipulation in dynamic environments",
+        "authors": [
+            "Tomas Merva*", 
+            "Saray Bakker*", 
+            "Max Spahn",
+            "Danning Zhao", 
+            "Ivan Virgala",
+            "Javier Alonso-Mora"
+        ],
+        "date": "2025-04-11",
+        "type": "journal",
+        "venue": "RA-L",
+        "links": [
+            {
+                "web": "https://autonomousrobots.nl/paper_websites/g3f"
+            }
+        ],
+        "note": null,
+        "belongs_to_projects": ["interact", "saraypapers"],
+        "topics":[
+            "motion planning", "collision avoidance"
+        ],
+        "abstract": "In dynamic environments shared by humans and robots, mobile manipulators must continuously adapt to real-time changes to execute tasks successfully. 
+        While global planning methods are effective at considering the full task scope, they lack the computational efficiency required for reactive adaptation. 
+        In contrast, local planning approaches can be executed online but are limited by their inability to account for the full task's duration. 
+        To tackle this, we propose Globally-Guided Geometric Fabrics (G3F), a framework for real-time motion generation along the full task horizon, by interleaving an optimization-based planner with a fast reactive geometric motion planner, called geometric fabrics. 
+        The approach adapts the path and explores alternative target poses, while accounting for collision avoidance and the robot's physical constraints. This results in a real-time adaptive framework considering whole-body motions, where a robot operates in close proximity to other robots and humans. 
+        We validate our approach through various simulations and real-world experiments on mobile manipulators in multi-agent settings, achieving improved success rates compared to vanilla geometric fabrics, prioritized rollout fabrics and model predictive control. "
+    },
 ]
