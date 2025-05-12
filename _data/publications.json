@@ -9,7 +9,7 @@
             "Bram van de Vrande",
             "Henry Stoutjesdijk",
             "Marco Alonso",
-            "Elena Torta",
+            "Elena Torta"
         ],
         "date": "2024-05-01",
         "type": "conference",
@@ -106,7 +106,8 @@
         "venue": "ICRA",
         "links": [
             {
-                "pdf": "https://arxiv.org/abs/2502.20106"
+                "pdf": "https://arxiv.org/abs/2502.20106",
+                "code": "https://github.com/tud-amr/SVG-MPPI"
             }
         ],
         "note": null,
@@ -128,7 +129,7 @@
             that minimize contact force. In qualitative and quantitative
             experiments, SVG-MPPI outperforms the existing paradigm
             that uses only binary movability for planning, achieving higher
-            success rates with reduced cumulative contact forces. "
+            success rates with reduced cumulative contact forces."
     },
     {
         "title": "TamedPUMA: safe and stable imitation learning with geometric fabrics",
@@ -144,6 +145,9 @@
         "venue": "L4DC",
         "links": [
             {
+                "pdf": "https://arxiv.org/abs/2503.17432v1",
+                "web": "https://autonomousrobots.nl/paper_websites/pumafabrics",
+                "code": "https://github.com/tud-amr/pumafabrics"
             }
         ],
         "note": null,
@@ -176,7 +180,9 @@
         "venue": "RA-L",
         "links": [
             {
-                "web": "https://autonomousrobots.nl/paper_websites/g3f"
+                "pdf": "https://ieeexplore.ieee.org/document/10967245",
+                "web": "https://autonomousrobots.nl/paper_websites/g3f",
+                "code": "https://github.com/TomasMerva/g3f_planner"
             }
         ],
         "note": null,
@@ -191,4 +197,5 @@
         The approach adapts the path and explores alternative target poses, while accounting for collision avoidance and the robot's physical constraints. This results in a real-time adaptive framework considering whole-body motions, where a robot operates in close proximity to other robots and humans. 
         We validate our approach through various simulations and real-world experiments on mobile manipulators in multi-agent settings, achieving improved success rates compared to vanilla geometric fabrics, prioritized rollout fabrics and model predictive control. "
     },
+
 ]

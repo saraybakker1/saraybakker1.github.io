@@ -8,7 +8,8 @@
             <br>
             <span class="author-names">
                 {% for author in include.publication.authors %}
-                    {% if author == site.author %}
+                    {% assign clean_author = author | remove: '*' %}
+                    {% if clean_author == site.author %}
                     <u>{{ author }}</u>
                     {% else %}
                     {{ author }}
