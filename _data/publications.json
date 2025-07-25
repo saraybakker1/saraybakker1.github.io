@@ -64,7 +64,6 @@
                 "pdf": "https://openreview.net/pdf?id=xWU3Tb8JCE",
             }
         ],
-        "image": "/assets/images/papers/tamedpuma/cpm.mp4",
         "key_words": [
         ],
         "abstract": "Using the language of dynamical systems, Imitation learning (IL) provides an intuitive and effective way of teaching stable task-space motions to robots with goal convergence. Yet, these techniques are affected by serious limitations when it comes to ensuring safety and fulfillment of physical constraints. With this work, we propose to solve this challenge via TamedPUMA, an IL algorithm augmented with a recent development in motion planning called geometric fabrics. We explore two variations of this approach, which we name the forcing policy method and the compatible potential method. The result is a stable imitation learning strategy within which we can seamlessly blend geometrical constraints like collision avoidance and joint limits. Beyond providing a theoretical analysis, we demonstrate TamedPUMA with simulated and real-world tasks, including a 7-DoF manipulator."
@@ -143,6 +142,7 @@
         "date": "2025-06-01",
         "type": "conference",
         "venue": "L4DC",
+        "image": "/assets/images/papers/tamedpuma/cpm.mp4",
         "links": [
             {
                 "pdf": "https://arxiv.org/abs/2503.17432v1",
@@ -166,7 +166,7 @@
         with simulated and real-world tasks, including a 7-DoF manipulator."
     },
     {
-        "title": "Globally-guided geometric fabrics for reactive mobile manipulation in dynamic environments",
+        "title": "Globally-Guided Geometric Fabrics for Reactive Mobile Manipulation in Dynamic Environments",
         "authors": [
             "Tomas Merva*", 
             "Saray Bakker*", 
@@ -187,6 +187,7 @@
         ],
         "note": null,
         "belongs_to_projects": ["interact", "saraypapers"],
+        "image": "/assets/images/papers/g3f/dinovas_pickplace_43.mp4",
         "topics":[
             "motion planning", "collision avoidance"
         ],
@@ -196,6 +197,36 @@
         To tackle this, we propose Globally-Guided Geometric Fabrics (G3F), a framework for real-time motion generation along the full task horizon, by interleaving an optimization-based planner with a fast reactive geometric motion planner, called geometric fabrics. 
         The approach adapts the path and explores alternative target poses, while accounting for collision avoidance and the robot's physical constraints. This results in a real-time adaptive framework considering whole-body motions, where a robot operates in close proximity to other robots and humans. 
         We validate our approach through various simulations and real-world experiments on mobile manipulators in multi-agent settings, achieving improved success rates compared to vanilla geometric fabrics, prioritized rollout fabrics and model predictive control. "
+    },
+    {
+        "title": "Overcoming Explicit Environment Representations With Geometric Fabrics",
+        "authors": [
+            "Max Spahn", 
+            "Saray Bakker", 
+            "Javier Alonso-Mora"
+        ],
+        "date": "2025-04-01",
+        "type": "journal",
+        "venue": "RA-L",
+        "links": [
+            {
+                "pdf": "https://ieeexplore.ieee.org/abstract/document/11005880",
+            }
+        ],
+        "note": null,
+        "belongs_to_projects": ["interact", "saraypapers"],
+        "topics":[
+            "motion planning", "collision avoidance"
+        ],
+        "abstract": "Deployment of robots in dynamic environments requires reactive trajectory generation. While optimization-based methods, such as Model Predictive Control focus on constraint verificaction, Geometric Fabrics offer a computationally efficient
+way to generate trajectories that include all avoidance behaviors if the environment can be represented as a set of object primitives.
+Obtaining such a representation from sensor data is challenging, especially in dynamic environments. In this paper, we integrate
+implicit environment representations, such as Signed Distance Fields and Free Space Decomposition into the framework of
+Geometric Fabrics. In the process, we derive how numerical gradients can be integrated into the push and pull operations
+in Geometric Fabrics. Our experiments reveal that both, ground robots and robotic manipulators, can be controlled using these
+implicit representations. Moreover, we show that, unlike the explicit representation, implicit representations can be used in
+the presence of dynamic obstacles without further considerations. Finally, we demonstrate our methods in the real-world, showing
+the applicability of our approach in practice."
     },
 
 ]
