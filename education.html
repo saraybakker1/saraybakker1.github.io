@@ -1,5 +1,5 @@
 ---
-title: Education
+title: Educational activities
 permalink: /education/
 ---
 
@@ -34,12 +34,15 @@ Although MPC-d incurs higher computational costs than reactive geometric methods
 The <a href="https://repository.tudelft.nl/record/uuid:c305996b-0034-4e3f-834e-136882ae0172">thesis</a> and <a href="https://github.com/DianeZhao/dinova_mpc">code</a> are available.
 
 <br><br>
-<h4>Switched geometric motion planning</h4>
+<h4>Statistical Runtime Verification for Geometric Motion Planning</h4>
 <h5>By Leon Kehler</h5>
-In progress, stay tuned!
+<b>Abstract:</b> As robots increasingly operate in human environments, their controllers must ensure safe and reliable behavior under real-time constraints. Although optimization-based motion planners can enforce hard safety constraints, their computational demands limit their use on complex robotic platforms. Geometric motion planning offers a real-time alternative through optimization-free, closed-form control laws with reach–avoid guarantees. However, these guarantees rely on assumptions about obstacle representations that are often violated in realistic settings. When such assumptions fail, the planner’s dynamical system may preserve invariance of the safe set but lose global attractivity, jeopardizing goal reachability.
 
-<!-- <p>If you are interested in a Master Thesis or research assignment in task planning, task assigment or multi agent systems in general, feel free to send me a message, or contact Javier Alonso Mora.</p>
-<p>You can check our group website for a full list of current master thesis that are currently being offered <a href="https://autonomousrobots.nl/education/">AMR lab.</a></p> -->
+This thesis introduces a runtime verification algorithm, <em>Scenario-Shield</em>, that adapts the geometric planner’s underlying dynamical system to expand its finite-time region of attraction. The method periodically samples nearby robot configurations and performs forward simulations to approximate this region. To accelerate this process, the approach is extended by incorporating statistical uncertainty quantification: conformal prediction is used to calibrate a fast membership test for candidate states, and the scenario approach provides a principled approximation of an uncountably infinite subset of the region of attraction.
+
+To maintain computational efficiency, the algorithm is implemented using parallel computing and integrated into a geometric motion planning toolbox with ROS. The proposed method is validated in simulation on both a holonomic ground robot and a mobile manipulator, demonstrating improved reliability over baseline geometric fabrics controllers.
+<br><br>
+The thesis is available at: <a href="https://repository.tudelft.nl/record/uuid:043f28e1-fa5c-4ba2-a789-6f32d531472c">LINK</a>.
 
 <!-- <h2>Recommended Resources</h2>
 
