@@ -3,12 +3,99 @@ title: Educational activities
 permalink: /education/
 ---
 
+
+
 <h2>Master Thesis Supervision</h2>
 
 <p> As a daily supervisor, I have the pleasure to supervise amazing master students. 
     Please check out their thesis and published code for more information. </p>
 
-<h4>Improving indoor navigation through cluttered rooms using movability estimation</h4>
+
+    <!-- Joris Weeda -->
+<!-- Joris Weeda -->
+<div class="row g-0 p-3 brutalist-card mb-3 align-items-center border-start border-4 border-primary">
+  <div class="col-auto me-3 d-none d-sm-block">
+    <img src="{{ '/assets/images/students/overview_svg_mppi.jpg' | relative_url }}"
+         class="img-fluid rounded-3 thesis-thumb"
+         alt="Joris Weeda"
+         style="height:150px; object-fit:contain;">
+  </div>
+  <div class="col">
+    <h4 class="mb-2">Improving indoor navigation through cluttered rooms using movability estimation</h4>
+    <h5 class="mb-3">By Joris Weeda</h5>
+
+    <div class="d-flex gap-2 mb-2">
+      <a class="btn btn-sm btn-dark" data-bs-toggle="collapse" href="#collapseEdu1" role="button"
+         aria-expanded="false" aria-controls="collapseEdu1"><i class="bi bi-chevron-right"></i> abstract</a>
+        <a class="btn btn-sm btn-dark" href="https://arxiv.org/abs/2502.20106" target="_blank" rel="noopener noreferrer">paper</a>
+      <a class="btn btn-sm btn-dark" href="https://repository.tudelft.nl/person/Person_728a81fc-4261-4fd7-ab1d-e5c161e1bbd7" target="_blank" rel="noopener noreferrer">thesis</a>
+      <a class="btn btn-sm btn-dark" href="https://github.com/tud-amr/SVG-MPPI/" target="_blank" rel="noopener noreferrer">code</a>
+    
+    </div>
+
+    <div class="collapse" id="collapseEdu1">
+      <div class="card card-body text-bg-light">
+        <b>Abstract:</b> Navigation Among Movable Obstacles (NAMO) poses a challenge for traditional path-planning methods when obstacles block the path, requiring push actions to reach the goal. We propose a framework that enables movability-aware planning to overcome this challenge without relying on explicit obstacle placement. Our framework integrates a global Semantic Visibility Graph and a local Model Predictive Path Integral (SVG-MPPI) approach to efficiently sample rollouts, taking into account the continuous range of obstacle movability. A physics engine is adopted to simulate the interaction result of the rollouts with the environment, and generate trajectories that minimize contact force. In qualitative and quantitative experiments, SVG-MPPI outperforms the existing paradigm that uses only binary movability for planning, achieving higher success rates with reduced cumulative contact forces.
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Danning Zhao -->
+<div class="row g-0 p-3 brutalist-card mb-3 align-items-center border-start border-4 border-primary">
+  <div class="col-auto me-3 d-none d-sm-block">
+    <img src="{{ '/assets/images/students/danning_thesis_plot.jpg' | relative_url }}"
+         class="img-fluid rounded-3 thesis-thumb"
+         alt="Danning Zhao"
+         style="height:150px; object-fit:contain;">
+  </div>
+  <div class="col">
+    <h4 class="mb-2">Motion planning for mobile manipulators in multi-agent settings using MPC</h4>
+    <h5 class="mb-3">By Danning Zhao</h5>
+
+    <div class="d-flex gap-2 mb-2">
+      <a class="btn btn-sm btn-dark" data-bs-toggle="collapse" href="#collapseEdu2" role="button"
+         aria-expanded="false" aria-controls="collapseEdu2"><i class="bi bi-chevron-right"></i> abstract</a>
+      <a class="btn btn-sm btn-dark" href="https://repository.tudelft.nl/record/uuid:c305996b-0034-4e3f-834e-136882ae0172" target="_blank" rel="noopener noreferrer">thesis</a>
+      <a class="btn btn-sm btn-dark" href="https://github.com/DianeZhao/dinova_mpc" target="_blank" rel="noopener noreferrer">code</a>
+    </div>
+
+    <div class="collapse" id="collapseEdu2">
+      <div class="card card-body text-bg-light">
+        <b>Abstract:</b> Mobile manipulators, which integrate a robotic arm on a mobile base, are increasingly being explored and deployed in sectors such as healthcare, logistics, and aerospace. While motion planning for these systems has been studied in single-agent scenarios, the use of multiple robots to enhance efficiency and accelerate task completion in multi-agent settings remains largely unexplored. This thesis proposes a decentralized Model Predictive Control (MPC) framework with a double integrator dynamic model (MPC-d) tailored for multi-mobile manipulators operating in shared workspaces. It integrates optimization-based planning with robust state estimation and a prioritized heuristic to resolve potential livelocks. The framework is validated in simulation and real-world experiments, demonstrating effective collision avoidance and improved efficiency.
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Leon Kehler -->
+<div class="row g-0 p-3 brutalist-card mb-3 align-items-center border-start border-4 border-primary">
+  <div class="col-auto me-3 d-none d-sm-block">
+    <img src="{{ '/assets/images/favicon.jpg' | relative_url }}"
+         class="img-fluid rounded-3 thesis-thumb"
+         alt="Leon Kehler"
+         style="height:150px; object-fit:contain;">
+  </div>
+  <div class="col">
+    <h4 class="mb-2">Statistical Runtime Verification for Geometric Motion Planning</h4>
+    <h5 class="mb-3">By Leon Kehler</h5>
+
+    <div class="d-flex gap-2 mb-2">
+      <a class="btn btn-sm btn-dark" data-bs-toggle="collapse" href="#collapseEdu3" role="button"
+         aria-expanded="false" aria-controls="collapseEdu3"><i class="bi bi-chevron-right"></i> abstract</a>
+      <a class="btn btn-sm btn-dark" href="https://repository.tudelft.nl/record/uuid:043f28e1-fa5c-4ba2-a789-6f32d531472c" target="_blank" rel="noopener noreferrer">thesis</a>
+    </div>
+
+    <div class="collapse" id="collapseEdu3">
+      <div class="card card-body text-bg-light">
+        <b>Abstract:</b> As robots increasingly operate in human environments, their controllers must ensure safe and reliable behavior under real-time constraints. Although optimization-based motion planners can enforce hard safety constraints, their computational demands limit their use on complex robotic platforms. This thesis introduces a runtime verification algorithm, Scenario-Shield, that adapts the geometric planner’s underlying dynamical system to expand its finite-time region of attraction by sampling nearby configurations and using statistical uncertainty quantification for efficient membership testing. Implementations and experiments demonstrate improved reliability over baseline controllers.
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- <h4>Improving indoor navigation through cluttered rooms using movability estimation</h4>
 <h5>By Joris Weeda</h5>
 <b>Abstract:</b> Navigation Among Movable Obstacles (NAMO) poses a challenge for traditional path-planning methods when obstacles block the path, requiring push actions to reach the goal. 
 We propose a framework that enables movability-aware planning to overcome this challenge without relying on explicit obstacle placement.
@@ -42,7 +129,7 @@ This thesis introduces a runtime verification algorithm, <em>Scenario-Shield</em
 
 To maintain computational efficiency, the algorithm is implemented using parallel computing and integrated into a geometric motion planning toolbox with ROS. The proposed method is validated in simulation on both a holonomic ground robot and a mobile manipulator, demonstrating improved reliability over baseline geometric fabrics controllers.
 <br><br>
-The thesis is available at: <a href="https://repository.tudelft.nl/record/uuid:043f28e1-fa5c-4ba2-a789-6f32d531472c">LINK</a>.
+The thesis is available at: <a href="https://repository.tudelft.nl/record/uuid:043f28e1-fa5c-4ba2-a789-6f32d531472c">LINK</a>. -->
 
 <!-- <h2>Recommended Resources</h2>
 
