@@ -228,5 +228,29 @@ implicit representations. Moreover, we show that, unlike the explicit representa
 the presence of dynamic obstacles without further considerations. Finally, we demonstrate our methods in the real-world, showing
 the applicability of our approach in practice."
     },
+    {
+        "title": "Curve-Induced Dynamical Systems on Riemannian Manifolds and Lie Groups",
+        "authors": [
+            "Saray Bakker*", 
+            "Martin Schonger*",
+            "Tobias Löw",
+            "Javier Alonso-Mora",
+            "Sylvain Calinon"
+        ],
+        "date": "2026-03-05",
+        "type": "journal",
+        "venue": "Arxiv (preprint)",
+        "links": [
+            {
+                "pdf": "https://arxiv.org/pdf/2603.05268",
+            }
+        ],
+        "note": null,
+        "belongs_to_projects": ["interact", "saraypapers"],
+        "topics":[
+            "motion planning", "smooth manifolds", "dynamical systems"
+        ],
+        "abstract": "Deploying robots in household environments requires safe, adaptable, and interpretable behaviors that respect the geometric structure of tasks. Often represented on Lie groups and Riemannian manifolds, this includes poses on SE(3) or symmetric positive definite matrices encoding stiffness or damping matrices. In this context, dynamical system-based approaches offer a natural framework for generating such behavior, providing stability and convergence while remaining responsive to changes in the environment. We introduce Curve-induced Dynamical systems on Smooth Manifolds (CDSM), a real-time framework for constructing dynamical systems directly on Riemannian manifolds and Lie groups. The proposed approach constructs a nominal curve on the manifold, and generates a dynamical system which combines a tangential component that drives motion along the curve and a normal component that attracts the state toward the curve. We provide a stability analysis of the resulting dynamical system and validate the method quantitatively. On an S2 benchmark, CDSM demonstrates improved trajectory accuracy, reduced path deviation, and faster generation and query times compared to state-of-the-art methods. Finally, we demonstrate the practical applicability of the framework on both a robotic manipulator, where poses on SE(3) and damping matrices on SPD(n) are adapted online, and a mobile manipulator. "
+    },
 
 ]
