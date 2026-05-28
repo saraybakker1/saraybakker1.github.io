@@ -253,4 +253,27 @@ the applicability of our approach in practice."
         "abstract": "Deploying robots in household environments requires safe, adaptable, and interpretable behaviors that respect the geometric structure of tasks. Often represented on Lie groups and Riemannian manifolds, this includes poses on SE(3) or symmetric positive definite matrices encoding stiffness or damping matrices. In this context, dynamical system-based approaches offer a natural framework for generating such behavior, providing stability and convergence while remaining responsive to changes in the environment. We introduce Curve-induced Dynamical systems on Smooth Manifolds (CDSM), a real-time framework for constructing dynamical systems directly on Riemannian manifolds and Lie groups. The proposed approach constructs a nominal curve on the manifold, and generates a dynamical system which combines a tangential component that drives motion along the curve and a normal component that attracts the state toward the curve. We provide a stability analysis of the resulting dynamical system and validate the method quantitatively. On an S2 benchmark, CDSM demonstrates improved trajectory accuracy, reduced path deviation, and faster generation and query times compared to state-of-the-art methods. Finally, we demonstrate the practical applicability of the framework on both a robotic manipulator, where poses on SE(3) and damping matrices on SPD(n) are adapted online, and a mobile manipulator. "
     },
 
+    {
+        "title": "Cooperative Multi-Agent Mobile Manipulation using Learned Dynamical Systems",
+        "authors": [
+            "Saray Bakker", 
+            "Wendelin Böhmer",
+            "Javier Alonso-Mora",
+        ],
+        "date": "2026-05-30",
+        "type": "workshop",
+        "venue": "ICRA, workshop on Multi-Agent Robotic Systems: Real-World Collaboration and Interaction",
+        "links": [
+            {
+                "pdf": "https://autonomousrobots.nl/assets/files/publications/26-Bakker-icra.pdf",
+            }
+        ],
+        "note": null,
+        "belongs_to_projects": ["interact", "saraypapers"],
+        "topics":[
+            "motion planning", "smooth manifolds", "dynamical systems"
+        ],
+        "abstract": "We propose a framework for safe and interpretable multi-agent collaboration in mobile manipulation leveraging independently learned single-agent dynamical systems. Each robot is equipped with a stable task-space vector field defined on SE(3), which policy we preserve, while enabling collaboration through velocity scaling. Unlike prior collaborative learning approaches that rely on predicting key poses and delegating safety-critical reasoning to low-level planners, our method incorporates whole-body collision avoidance directly into the policy while remaining close to the original dynamical systems. We formulate multi-agent coordination as a finite-horizon optimization problem that adapts execution speed, without modifying motion direction, to satisfy task constraints and ensure collision-free behavior. The proposed framework is parallelized with JAX and evaluated in simulation on two mobile manipulators, demonstrating safe execution and improved coordination across both illustrative and randomized scenarios."
+    },
+
 ]
